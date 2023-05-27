@@ -1,0 +1,23 @@
+Q.3) Given an array of integers, where all elements but one occur twice, find the unique element.
+
+#Code
+
+def lonelyinteger(a):
+    # Write your code here
+    li=0
+    for i in a:
+        li^=i
+    return li            
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    n = int(input().strip())
+
+    a = list(map(int, input().rstrip().split()))
+
+    result = lonelyinteger(a)
+
+    fptr.write(str(result) + '\n')
+
+    fptr.close()
