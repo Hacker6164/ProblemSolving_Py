@@ -3,7 +3,6 @@ Q.1) Given an array of integers, calculate the ratios of its elements that are p
 #Code
 
 def plusMinus(arr):
-    # Write your code here
     p,n,z=0,0,0
     for i in range(0,len(arr)):
         if arr[i]>0:
